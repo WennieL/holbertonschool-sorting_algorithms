@@ -1,4 +1,4 @@
-## C - Sorting algorithms & Big O
+# C - Sorting algorithms & Big O
 
 ### Data Structure and Functions
 - For this project you are given the following [print_array](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/print_array.c), and [print_list](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/print_list.c) functions
@@ -31,7 +31,7 @@ typedef struct listint_s
 
 ###### Please use the "short" notation on't use constants). Example: O(nk) or O(wn) should be written O(n). If an answer is required within a file, all your answers files must have a newline at the end.
 
-## [Test files]()
+## [Test files](https://github.com/WennieL/holbertonschool-sorting_algorithms/tree/main/test%20files)
 
 ## Tasks
 
