@@ -52,3 +52,12 @@ typedef struct listint_s
 - Prototype: ```void insertion_sort_list(listint_t **list);```
 - You are not allowed to modify the integer n of a node. You have to swap the nodes themselves.
 - You’re expected to print the list after each time you swap two elements
+
+### [2. Selection sort](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/2-selection_sort.c)
+##### Write a function that sorts an array of integers in ascending order using the Selection sort algorithm
+
+- Prototype: ```void selection_sort(int *array, size_t size);```
+- You’re expected to print the array after each time you swap two elements
+
+### Differnt method used for [2. Selection sort](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/Task2%3A%20Different%20method)
+
