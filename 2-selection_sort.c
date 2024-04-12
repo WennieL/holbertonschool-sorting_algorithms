@@ -1,4 +1,6 @@
 #include "sort.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * swap - swap first element with second elem
  * @first: first elem
@@ -19,6 +21,10 @@ void selection_sort(int *array, size_t size)
 {
 long unsigned int i, min_element, j;
 i = 0;
+if (array == NULL || size == 0)
+{
+return;
+}
 while(i < (size - 1))
 {
 min_element = i;
@@ -31,7 +37,7 @@ j++;
 }
 if (min_element != i)
 swap(&array[min_element], &array[i]);
-i++;
 print_array(array, size);
+i++;
 }
 }
