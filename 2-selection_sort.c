@@ -10,9 +10,9 @@
 
 void swap(int *first, int *second)
 {
-        int temp = *first;
-        *first = *second;
-        *second = temp;
+	int temp = *first;
+	*first = *second;
+	*second = temp;
 }
 
 /**
@@ -23,62 +23,32 @@ void swap(int *first, int *second)
 
 void selection_sort(int *array, size_t size)
 {
-        size_t i, min_element, j;
+	size_t i, min_element, j;
 
-        i = 0;
+	i = 0;
 
-        if (array == NULL || size < 2)
-        {
-                return;
-        }
+	if (array == NULL || size < 2)
+	{
+		return;
+	}
 
-        while (i < (size - 1))
-        {
-                min_element = i;
-                j = i + 1;
+	while (i < (size - 1))
+	{
+		min_element = i;
+		j = i + 1;
 
-                while (j < size)
-                {
-                        if (array[j] < array[min_element])
-                                min_element = j;
-                        j++;
-                }
+		while (j < size)
+		{
+			if (array[j] < array[min_element])
+				min_element = j;
+			j++;
+		}
 
-                if (min_element != i)
-                {
-                        swap(&array[min_element], &array[i]);
-                        print_array(array, size);
-                }
-                i++;
-        }
+		if (min_element != i)
+		{
+			swap(&array[min_element], &array[i]);
+			print_array(array, size);
+		}
+		i++;
+	}
 }
-
-
-/** Different Method 
-* void selection_sort(int *array, size_t size)
-* {
-*	 size_t i, j, min;
-*	 int temp;
-*
-*	 if (array == NULL || size < 2)
-*		 return;
-*
-*	 for (i = 0; i < size; i++)
-*	 {
-*		 min = i;
-*		 for (j = i + 1; j < size; j++)
-*		 {
-*			 if (array[j] < array[min])
-*				 min = j;
-*		 }
-*
-*		 if (min != i)
-*		 {
-*			 temp = array[i];
-*			 array[i] = array[min];
-*			 array[min] = temp;
-*			 print_array(array, size);
-* 		 }
-*     	 }
-* }
-*/
