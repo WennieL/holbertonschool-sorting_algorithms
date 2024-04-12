@@ -45,3 +45,10 @@ typedef struct listint_s
 - in the best case
 - in the average case
 - in the worst case
+
+### [1. Insertion sort](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/1-insertion_sort_list.c)
+##### Write a function that sorts a doubly linked list of integers in ascending order using the Insertion sort algorithm
+
+- Prototype: ```void insertion_sort_list(listint_t **list);```
+- You are not allowed to modify the integer n of a node. You have to swap the nodes themselves.
+- You’re expected to print the list after each time you swap two elements
