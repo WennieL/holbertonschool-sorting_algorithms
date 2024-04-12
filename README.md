@@ -59,5 +59,5 @@ typedef struct listint_s
 - Prototype: ```void selection_sort(int *array, size_t size);```
 - You’re expected to print the array after each time you swap two elements
 
-### Differnt method used for [2. Selection sort](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/Task2%3A%20Different%20method)
+### Differnt method used for [2. Selection sort](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/task_2_diff_method.c)
 
