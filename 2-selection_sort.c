@@ -19,9 +19,9 @@ int temp = *first;
 */
 void selection_sort(int *array, size_t size)
 {
-long unsigned int i, min_element, j;
+size_t i, min_element, j;
 i = 0;
-if (array == NULL || size == 0)
+if (array == NULL || size < 2)
 {
 return;
 }
@@ -36,8 +36,10 @@ min_element = j;
 j++;
 }
 if (min_element != i)
+{
 swap(&array[min_element], &array[i]);
 print_array(array, size);
+}
 i++;
 }
 }
