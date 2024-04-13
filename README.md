@@ -68,3 +68,8 @@ typedef struct listint_s
 - You must implement the Lomuto partition scheme.
 - The pivot should always be the last element of the partition being sorted.
 - You’re expected to print the array after each time you swap two elements
+
+:ninja: ### Contributor
+- [Khang Nguyen](https://github.com/kdn95)
+- [Susmitha Banda](https://github.com/Susmitha-Banda)
+- [Wen-I Liu](https://github.com/WennieL)
