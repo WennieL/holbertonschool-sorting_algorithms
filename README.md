@@ -61,3 +61,10 @@ typedef struct listint_s
 
 ### Differnt method used for [2. Selection sort](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/task_2_diff_method.c)
 
+### [3. Quick sort](https://github.com/WennieL/holbertonschool-sorting_algorithms/blob/main/3-quick_sort.c)
+##### Write a function that sorts an array of integers in ascending order using the Quick sort algorithm
+
+- Prototype: ```void quick_sort(int *array, size_t size);```
+- You must implement the Lomuto partition scheme.
+- The pivot should always be the last element of the partition being sorted.
+- You’re expected to print the array after each time you swap two elements
