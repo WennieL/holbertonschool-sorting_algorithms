@@ -14,32 +14,32 @@
 
 int partition(int *array, int left, int right, size_t size)
 {
-	int pivot = array[right];
-	int temp;
+	int pivot, temp;
 	int i = left - 1, j = left;
 
-	while (j < right)
+	pivot = array[right];
+	
+	while (j <= right - 1)
 	{
-		if (array[j] <= pivot)
+		if (array[j] < pivot)
 		{
+			i++;
 			temp = array[i];
 			array[i] = array[j];
 			array[j] = temp;
-			i++;
 			if (array[i] != array[j])
 				print_array(array, size);
 		}
 		j++;
 	}
 
-	i++;
-	temp = array[i];
-	array[i] = array[right];
+	temp = array[i + 1];
+	array[i + 1] = array[right];
 	array[right] = temp;
-	if (array[i] != array[right])
+	if (array[i + 1] != array[right])
 		print_array(array, size);
 
-	return (i);
+	return (i + 1);
 }
 
 /**
@@ -56,12 +56,13 @@ void quick_sort_recursive(int *array, int left, int right, size_t size)
 {
 	int pivot;
 
-	if (left >= right || left < 0)
-		return;
-	pivot = partition(array, left, right, size);
-
-	quick_sort_recursive(array, left, pivot - 1, size);
-	quick_sort_recursive(array, pivot + 1, right, size);
+	if (left < right)
+	{
+		pivot = partition(array, left, right, size);
+		
+		quick_sort_recursive(array, left, pivot - 1, size);
+		quick_sort_recursive(array, pivot + 1, right, size);
+	}
 }
 
 /**
