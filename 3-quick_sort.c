@@ -18,7 +18,7 @@ int partition(int *array, int left, int right, size_t size)
 	int i = left - 1, j = left;
 
 	pivot = array[right];
-	
+
 	while (j <= right - 1)
 	{
 		if (array[j] < pivot)
@@ -59,7 +59,7 @@ void quick_sort_recursive(int *array, int left, int right, size_t size)
 	if (left < right)
 	{
 		pivot = partition(array, left, right, size);
-		
+
 		quick_sort_recursive(array, left, pivot - 1, size);
 		quick_sort_recursive(array, pivot + 1, right, size);
 	}
