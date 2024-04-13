@@ -56,13 +56,12 @@ void quick_sort_recursive(int *array, int left, int right, size_t size)
 {
 	int pivot;
 
-	if (left < right)
-	{
-		pivot = partition(array, left, right, size);
+	if (left >= right || left < 0)
+		return;
+	pivot = partition(array, left, right, size);
 
-		quick_sort_recursive(array, left, pivot - 1, size);
-		quick_sort_recursive(array, pivot + 1, right, size);
-	}
+	quick_sort_recursive(array, left, pivot - 1, size);
+	quick_sort_recursive(array, pivot + 1, right, size);
 }
 
 /**
